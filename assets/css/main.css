@@ -21,8 +21,8 @@ header a {
 }
 
 .container {
-  flex: 1;
-  /* This makes the container take up available space */
+  flex: 1; /* This makes the container take up available space */
+  padding-top: 2rem;
   width: 100%;
   text-align: center;
   display: flex;
