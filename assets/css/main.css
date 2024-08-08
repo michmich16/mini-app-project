@@ -30,6 +30,7 @@ header a {
   align-items: center;
 }
 .container #country-details {
+  padding: 0 2rem;
   text-align: left;
 }
 .container #country-details #country-name {
