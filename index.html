@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <title>Document</title>
+    <script src="./assets/js/main.js" defer></script>
+    <title>Country Info</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1><a href="">Country Search</a></h1>
+        <input type="text" id="search" placeholder="Search for a country...">
+        <ul id="dropdown"></ul>
+    </header>
+
+    <div class="container">
+        <div id="country-details" class="hidden">
+            <h2 id="country-name"></h2>
+            <div class="flag-coa">
+                <p><img id="country-flag" src="" alt="Country Flag" ></p>
+                <p><img id="country-coa" src="" alt="Country COA" ></p>
+            </div>
+            <p><strong>Region:</strong> <span id="country-region"></span></p>
+            <p><strong>Subregion:</strong> <span id="country-subregion"></span></p>
+            <p><strong>Capital:</strong> <span id="country-capital"></span></p>
+            <p><strong>Population:</strong> <span id="country-population"></span></p>
+            <p><strong>Languages:</strong> <span id="country-languages"></span></p>
+            <p><strong>Currency:</strong> <span id="country-currency"></span></p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-info">
+        <li><p>Made By Michmich16</p></li>
+        <li><p>TECHCOLLEGE Aalborg</p></li>
+        </div>
+        <div class="footer-links">
+            <li><a href="github.com/michmich16">Github Link</a></li>
+            <li><a href="https://restcountries.com/">API Link</a></li>
+        </div>
+    </footer>
 </body>
+
 </html>

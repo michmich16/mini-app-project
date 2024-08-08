@@ -1,4 +1,149 @@
-body{
+$body-bg-color: #f4f4f4;
+$font-family: Arial, sans-serif;
+$input-padding: 12px;
+$font-size: 18px;
+$border-color: #ccc;
+$dropdown-max-height: 150px;
+$dropdown-bg-color: #fff;
+$hover-bg-color: #eee;
+
+body {
+    font-family: $font-family;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensures the body takes at least the full height of the viewport */
     margin: 0;
+    background-color: $body-bg-color;
+}
+
+header {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.container {
+    flex: 1;
+    /* This makes the container take up available space */
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #country-details {
+
+        text-align: left;
+
+        #country-name {
+            text-align: center;
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .flag-coa {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+
+            #country-flag {
+                width: 120px;
+            }
+
+            #country-coa {
+                width: 100px;
+            }
+        }
+    }
+}
+
+#search {
+    width: 60vw;
+    padding: $input-padding;
+    font-size: $font-size;
+    border-radius: 25px;
+}
+
+#dropdown {
+    list-style-type: none;
+    width: 60vw;
     padding: 0;
+    margin: 0;
+    border-top: none;
+    max-height: $dropdown-max-height;
+    overflow-y: auto;
+    background-color: $dropdown-bg-color;
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* Position dropdown absolutely */
+    top: 100%;
+    /* Position it right below the input field */
+    /* Align it with the left edge of the container */
+
+    li {
+        padding: $input-padding;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $hover-bg-color;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    font-size: 15px;
+    background-color: #fff;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li {
+            list-style: none;
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: #000;
+
+                :hover {
+                    color: #ccc;
+                }
+            }
+        }
+    }
+
+
 }

@@ -1,4 +1,123 @@
 body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Ensures the body takes at least the full height of the viewport */
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  flex: 1;
+  /* This makes the container take up available space */
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container #country-details {
+  text-align: left;
+}
+.container #country-details #country-name {
+  text-align: center;
+  margin: 0;
+  font-size: 32px;
+}
+.container #country-details .flag-coa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
+}
+.container #country-details .flag-coa #country-flag {
+  width: 120px;
+}
+.container #country-details .flag-coa #country-coa {
+  width: 100px;
+}
+
+#search {
+  width: 60vw;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 25px;
+}
+
+#dropdown {
+  list-style-type: none;
+  width: 60vw;
+  padding: 0;
+  margin: 0;
+  border-top: none;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #fff;
+  position: absolute;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /* Position dropdown absolutely */
+  top: 100%;
+  /* Position it right below the input field */
+  /* Align it with the left edge of the container */
+}
+#dropdown li {
+  padding: 12px;
+  cursor: pointer;
+}
+#dropdown li:hover {
+  background-color: #eee;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  font-size: 15px;
+  background-color: #fff;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+footer .footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-info li {
+  list-style: none;
+}
+footer .footer-info li p {
+  margin: 0;
+}
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-links li {
+  list-style: none;
+}
+footer .footer-links li a {
+  text-decoration: none;
+  color: #000;
+}
+footer .footer-links li a :hover {
+  color: #ccc;
 }/*# sourceMappingURL=main.css.map */
