@@ -5,7 +5,8 @@ body {
   min-height: 100vh;
   /* Ensures the body takes at least the full height of the viewport */
   margin: 0;
-  background-color: #f4f4f4;
+  background: rgb(0, 101, 255);
+  background: linear-gradient(180deg, rgb(0, 101, 255) 0%, rgb(57, 217, 214) 16%, rgb(108, 191, 144) 34%, rgb(148, 190, 117) 52%, rgb(181, 189, 95) 67%, rgb(164, 137, 30) 84%, rgb(88, 64, 14) 100%);
 }
 
 header {
@@ -16,18 +17,20 @@ header {
   position: relative;
 }
 header a {
-  color: black;
+  color: #fff;
   text-decoration: none;
 }
 
 .container {
-  flex: 1; /* This makes the container take up available space */
+  flex: 1;
+  /* This makes the container take up available space */
   padding-top: 2rem;
   width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 .container #country-details {
   padding: 0 2rem;
@@ -93,8 +96,8 @@ footer {
   grid-template-columns: 1fr 1fr;
   width: 100%;
   font-size: 20px;
-  background-color: #fff;
-  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgb(88, 64, 14);
+  box-shadow: rgb(88, 64, 14);
 }
 footer .footer-info {
   display: flex;
@@ -106,6 +109,7 @@ footer .footer-info li {
 }
 footer .footer-info li p {
   margin: 0;
+  color: #fff;
 }
 footer .footer-links {
   display: flex;
@@ -117,8 +121,5 @@ footer .footer-links li {
 }
 footer .footer-links li a {
   text-decoration: none;
-  color: #000;
-}
-footer .footer-links li a :hover {
-  color: #ccc;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
